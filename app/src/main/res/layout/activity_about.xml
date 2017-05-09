@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ab"
+    tools:context="xyz.xaidworkz.www.project_naman_n_piyush.activities.AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/tvAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:fontFamily="cursive"
+            android:text="About"
+            android:textColor="#ffff"
+            android:textSize="50dp" />
+
+        <ImageView
+            android:id="@+id/ivPiy"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvAbout"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            app:srcCompat="@drawable/owner" />
+
+        <ImageView
+            android:id="@+id/ivNam"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignTop="@+id/ivPiy"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/naman" />
+
+        <ImageView
+            android:id="@+id/ivPra"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignTop="@+id/ivNam"
+            android:layout_toEndOf="@+id/tvAbout"
+            app:srcCompat="@drawable/pra" />
+
+        <TextView
+            android:id="@+id/tvUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivPiy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:fontFamily="cursive"
+            android:text="This is our trio who had made this application a success in left corner is Piyush Srivastava teh developer of the application while in the middle is Naman Garg teh designer of the application and last but not the least we will like to thanks Prajesh Rai our vey own java developer of the application it's our effort and determination that we had this application a success."
+            android:textColor="#dd0a0000"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnOkay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvUs"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="251dp"
+            android:background="@color/colorAccent"
+            android:text="OKAY" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
